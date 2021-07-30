@@ -1,0 +1,16 @@
+.current {
+    color: var(--accent-color);
+
+    &::after {
+    content: '';
+    position: absolute;
+    bottom: -39px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+}
+}
+
+
