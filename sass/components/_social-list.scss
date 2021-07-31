@@ -1,11 +1,19 @@
 .social-media {
     display: flex;
-    justify-content: space-between;
-
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-bottom: 30px;
+    justify-content: center;
+    padding-bottom: 24px;
 }
+
+@media screen and (min-width: 1200px) {
+    .social-media {
+        justify-content: space-between;
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-bottom: 30px;
+    }
+    
+}
+
 
 .social-media__link {
     display: flex;
