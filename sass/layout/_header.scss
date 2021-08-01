@@ -1,6 +1,7 @@
 .header {
   padding-top: 16px;
   padding-bottom: 16px;
+  border-bottom: 1px solid #ececec;
 }
 
 .header-container {
@@ -128,6 +129,103 @@
 
 @media screen and (min-width: 768px) {
   .header {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+
+  .header-container {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .burger-btn {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+  .menu {
+    display: flex;
+    margin-left: 88px;
+  }
+
+  .menu__item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  .menu__link {
+    @include font(14px, 500, 1.14, 0.02em);
+    position: relative;
+    transition-property: color;
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+
+  .navigation {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .header-contacts {
+    display: block;
+  }
+
+  .header-contacts__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .header-contacts__link {
+    display: flex;
+    align-items: center;
+
+    @include font(14px, 500, 1.14, 0.02em);
+    color: var(--third-color);
+
+    transition-property: color;
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+
+  .header-contacts__icon {
+    margin-right: 8px;
+    fill: var(--third-color);
+
+    transition-property: fill;
+
+    .header-contacts__link:hover &,
+    .header-contacts__link:focus & {
+      fill: var(--accent-color);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .header-container {
+    align-items: baseline;
+  }
+
+  .menu {
+    margin-left: 93px;
+  }
+
+  .header-contacts {
+    display: flex;
+  }
+
+  .header-contacts__item:not(:last-child) {
+    margin-right: 30px;
+    margin-bottom: 0;
   }
 }
 
@@ -196,17 +294,5 @@
 //     &:hover,
 //     &:focus {
 //     color: var(--accent-color);
-// }
-// }
-
-// .header-contacts__icon {
-//     margin-right: 10px;
-//     fill: var(--third-color);
-
-//     transition-property: fill;
-
-//     .header-contacts__link:hover &,
-//     .header-contacts__link:focus & {
-//     fill: var(--accent-color);
 // }
 // }
