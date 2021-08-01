@@ -951,4 +951,35 @@ body {
     display: block;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .flex {
+    display: flex;
+    align-items: baseline;
+  }
+  .tablet-wrapper {
+    margin: 0;
+  }
+  .contacts-box {
+    margin-right: 83px;
+    text-align: unset;
+  }
+  .social-media-box {
+    text-align: unset;
+  }
+  .form-box {
+    text-align: unset;
+    margin-left: auto;
+  }
+  .form-box__form {
+    display: flex;
+  }
+  .form-box__field {
+    width: 358px;
+    margin: 0;
+  }
+  .form-box__button {
+    margin-left: 12px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
