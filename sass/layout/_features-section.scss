@@ -1,69 +1,64 @@
 .features-section__item:not(:last-child) {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .features-section__wrapper {
-    text-align: center;
-    padding: 25px 0;
-    background-color: var(--team-section-background-color);
-    border-radius: 4px;
+  text-align: center;
+  padding: 25px 0;
+  background-color: var(--team-section-background-color);
+  border-radius: 4px;
 
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .features-section__title {
-    @include font (14px, 700, 1.14, 0.03em)
-    text-transform: uppercase;
-    text-align: center;
+  @include font(14px, 700, 1.14, 0.03em) text-transform: uppercase;
+  text-align: center;
 
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .features-section__content {
-    @include font (14px, 400, 1.71, 0.03em)
-    color: var(--third-color);
+  @include font(14px, 400, 1.71, 0.03em) color: var(--third-color);
 }
 
-@media screen and (min-width:768px) {
-    .features-section__list {
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: -30px;
-        margin-left: -30px;
+@media screen and (min-width: 768px) {
+  .features-section__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
 
-    }
+  .features-section__item {
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc((100% - 60px) / 2);
+  }
 
-    .features-section__item {
-        margin-top: 30px;
-        margin-left: 30px;
-        flex-basis: calc((100% - 60px) / 2);
-    }
-
-    .features-section__title {
-        text-align: left;
-    }
+  .features-section__title {
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-    .features-section {
-        padding-top: 94px;
-        padding-bottom: 47px;
-    }
+  .features-section {
+    padding-top: 94px;
+    padding-bottom: 47px;
+  }
 
+  .features-section__list {
+    flex-wrap: nowrap;
+    margin: 0;
+  }
 
-    .features-section__list {
-        flex-wrap: nowrap;
-        margin: 0;
-    }
+  .features-section__item {
+    margin-top: 0;
+    margin-left: 0;
+  }
 
-    .features-section__item {
-        margin-top: 0;
-        margin-left: 0;
-    }
-
-    .features-section__item:not(:last-child) {
-        margin-right: 30px;
-        margin-bottom: 0;
-    }
-    
+  .features-section__item:not(:last-child) {
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
 }
