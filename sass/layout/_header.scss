@@ -75,7 +75,7 @@
 }
 
 .nav-list {
-  margin-bottom: 302px;
+  margin-bottom: 125px;
 }
 .nav-list__item {
   @include font(40px, 500, 1.17, 0.02em);
@@ -122,7 +122,7 @@
 }
 
 .media-list__link {
-  @include font(18px, 500, 1.22, 0.02em);
+  @include font(16px, 500, 1.22, 0.02em);
   color: var(--accent-color);
   padding-right: 10px;
 }
